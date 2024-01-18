@@ -77,7 +77,6 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ slides, parentWidth }) => {
         if (timerRef.current) {
             clearTimeout(timerRef.current)
         }
-        console.log('useEffect')
         timerRef.current = setTimeout(() => {
             goToNext()
         }, 3000)
